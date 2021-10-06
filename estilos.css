@@ -1,0 +1,369 @@
+*{margin: 0;padding: 0}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+    background-color:#EAEBED; 
+    min-height:100vh;
+}
+.conteiner-fluid {
+    width: 95%;
+    margin: 0 auto;
+}
+header{
+    background-color: #1A1A1A;
+    padding: 0.95em 0;
+    position:fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+
+header a {
+    display: block;
+    text-align: center;
+}
+
+figcaption{
+    font-weight:500 ;
+}
+
+
+header a img {
+    width: 7em;
+}
+
+#encabezadoPrincipal {
+
+    background-image: url(img/bannerPrincipalCelChico.jpg);
+    background-size: 100%;
+    height: 320px;
+    background-position: top;
+}
+
+#encabezadoPrincipal {
+    text-align: center;
+}
+
+#encabezadoPrincipal p {
+    padding-top: 1em;
+     color: #EAEBED;
+     font-size: 0.9em;
+     text-shadow: 5px 4px 10px rgba(0,0,0,0.15);
+}
+
+h1 {
+    color: #EAEBED;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 2em;
+}
+
+h1 img {
+    width: 4.9em;
+}
+
+#ingreso{
+    text-align: center;
+}
+
+
+#ingreso label {
+    display: block;
+    color: #4D4D4D;
+    margin-top: 2em;
+}
+
+#ingreso select{
+    display: block;
+    width: 80%;
+    border-radius:5px;
+    margin:0.5em auto;
+}
+
+#ingreso label:nth-of-type(1){
+    margin-top: 3em;
+}
+
+#ingreso select:nth-last-of-type(1){
+    margin-bottom:4em;
+}
+
+#ingresarDatos{
+    text-transform: uppercase;
+    color: #EAEBED;
+    background-color: #006989;
+    padding:0.5em 2em;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px
+}
+
+#volver{
+    text-transform: uppercase;
+    color: #EAEBED;
+    background-color: #006989;
+    padding:0.5em 2em;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px
+
+}
+
+#resultado{
+    width:100%!important;
+    margin-top: 4em;
+    display: none;
+}
+
+#resultado div:first-of-type
+{
+    position:relative;
+    text-align: center;
+}
+
+#resultado div div:nth-of-type(1) {
+    position:absolute;
+    top: 4%;
+    left: 1%;
+    vertical-align: middle;
+}
+
+#resultado div div:nth-of-type(2){
+    position:absolute;
+    top: 15%;
+    left: 1%;
+}
+
+#nombreCiudad{
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.3);
+}
+#temperatura{
+    color: white;
+    position:absolute;    
+    font-size: 2.5em;
+    font-weight: 300;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.3);
+}
+
+#resultado section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#resultado section article {
+    width: 24%;
+    background-color: #CCCCCC;
+    font-size: 0.9em;
+    text-align: center;
+    height: 8em;
+}
+
+#resultado section article :nth-child(1){
+    padding-top: 2em;
+}
+
+#resultado section article img{
+    width: 31%;
+}
+
+h6{
+    font-weight: 600;
+}
+
+#resultado section + div {
+    text-align: center;
+    margin-top: 3em;
+}
+
+footer{
+    position: sticky;
+    top: 100%;
+    margin-top:3.5em;
+    text-align: center;
+    color:#EAEBED;
+    background:#1A1A1A;
+    padding: 1.5em 0em;
+    font-size:0.9em;
+}
+
+@media screen and (min-width: 375px){
+    #encabezadoPrincipal {
+        background-image: url(img/bannerPrincipalCelMedio.jpg);
+    }
+
+    #encabezadoPrincipal p{
+        font-size: 0.95em;
+    }
+}
+
+@media screen and (min-width: 425px){
+    #encabezadoPrincipal {
+        background-image: url(img/bannerPrincipalCelGrande.jpg);
+    }
+
+    #encabezadoPrincipal p{
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    #encabezadoPrincipal {
+        background-image: url(img/bannerPrincipalTablet.jpg);
+        height:350px;
+    }
+
+    h1{
+       font-size: 3em;
+    }
+
+    h1 img{
+        padding-bottom:0.2em;
+        padding-left: 0.15em;
+    }
+    
+    #ingreso{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    #ingreso div {
+        width: 50%;
+    }
+    
+    #ingreso div:nth-last-of-type(1){
+        margin-top: 4.7em;
+        width: 30%
+    }
+    #resultado div div:nth-of-type(1){
+        left: 2%;
+    }
+
+    #resultado div div:nth-of-type(2){
+        top: 10%;
+        left: 2%;
+    }
+
+    #nombreCiudad{
+        font-size: 1.5em;
+    }
+    #temperatura{
+        font-size:3.5em;
+    }
+    
+    #ingreso select {
+        width:80%
+    }
+    #resultado section article img{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    
+    #encabezadoPrincipal {
+        background-image: url(img/bannerPrincipalNotebookChica.jpg);
+        height: 390px;
+    }
+
+    #ingreso div {
+        width: 31%;
+    }
+
+    #resultado div div:nth-of-type(2){
+        top: 13%;
+    }
+
+    #nombreCiudad{
+        font-size: 2.5em;
+    }
+    #temperatura{
+        font-size:4.5em;
+    }
+
+    #resultado section article img{
+        width: 20%;
+    }
+
+    #ingreso div:nth-last-of-type(1){
+        margin-top: 3em;
+        width: 100%
+    }
+
+    #ingreso{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #ingresarDatos{
+        padding: 0.5 2em;
+        transition: background-color, padding 0.2s;
+    }
+
+    #ingresarDatos:hover{
+        background-color: #17B2A3;
+        padding:0.5em 2.5em;
+    }  
+    
+    #volver{
+        padding: 0.5 2em;
+        transition: background-color, padding 0.2s;
+    }
+
+    #volver:hover{
+        background-color: #17B2A3;
+        padding:0.5em 2.5em;
+    }  
+
+}
+
+@media screen and (min-width: 1440px ){
+    #encabezadoPrincipal {
+        background-image: url(img/bannerPrincipalNotebookGrande.jpg);
+        height: 480px;
+    }
+
+    h1{
+        font-size: 4em;
+     }
+
+     #encabezadoPrincipal p{
+         font-size:1.2em
+     }
+
+     #resultado section article img{
+        width: 15%;
+    }
+    #nombreCiudad{
+        font-size: 4em;
+    }
+    #temperatura{
+        font-size:6em;
+    }
+
+}
+
+@media screen and (min-width: 1080px){
+    #encabezadoPrincipal {
+        background-image: url(img/bannerPrincipal.jpg);
+        background-position: bottom;
+        height: 540px;
+    }
+    #nombreCiudad{
+        font-size: 5.5em;
+    }
+    #temperatura{
+        font-size:7.5em;
+    }
+}
+
